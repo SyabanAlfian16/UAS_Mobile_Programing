@@ -56,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 String isian_nim = edNim.getText().toString();
                 String isian_noHp = edNoHp.getText().toString();
 
+
                 if (isian_nama.isEmpty() || isian_nim.isEmpty() || isian_noHp.isEmpty()) {
                     Toast.makeText(getApplicationContext(), "Isian masih kosong", Toast.LENGTH_SHORT).show();
                 } else {
-                    //mhsList.add(new MhsModel(1, isian_nama, isian_nim, isian_noHp));
 
                     boolean stts;
 
@@ -104,8 +104,6 @@ public class MainActivity extends AppCompatActivity {
                     intent_list.putParcelableArrayListExtra("mhsList", mhsList);
                     startActivity(intent_list);
                 }
-
-
             }
         });
     }
